@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.2em 2em;
+    align-items: center;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 2;
+    background-color: #F99417;
+}
+
+nav label {
+    font-size: 2em;
+    font-family: 'Pacifico', cursive;
+    color: #F5F5F5;
+}
+
+nav i {
+    color: #F5F5F5;
+}
+
+nav #navMenu {
+    display: flex;
+    list-style: none;
+    gap: 2em;
+    background-color: #F99417;
+}
+
+nav #navMenu li {
+    cursor: pointer;
+    color: #F5F5F5;
+}
+
+nav .fa-solid {
+    display: none;
+}
+
+nav #navMenu li::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #F5F5F5;
+    display: block;
+    margin: auto;
+    transition: 0.2s;
+}
+
+nav #navMenu li:hover::after {
+    width: 100%;
+}
+
+/* Responsive: Tablet */
+
+@media (max-width: 768px) {
+    nav {
+        padding: 0.3em 2em;
+    }
+
+}
+
+/* Responsive: Mobile L */
+
+@media (max-width: 425px) {
+    nav {
+        padding: 0.3em 0;
+    }
+
+    nav label {
+        font-size: 1em;
+        margin-left: 1em;
+    }
+
+    nav #navMenu {
+        display: none;
+        z-index: 1;
+        gap: 0;
+    }
+
+    nav #navMenu li {
+        margin: 1em 0;
+    }
+
+    nav #navMenu.active {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        right: -100%;
+        top: 37.59px;
+        width: 50%;
+        text-align: end;
+        box-sizing: border-box;
+        animation: navBarIn 0.2s linear forwards;
+    }
+
+    @keyframes navBarIn {
+        0% {
+            right: -100%;
+        }
+
+        100% {
+            right: 0;
+        }
+    }
+
+    nav #navMenu:not(.active) {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        top: 37.59px;
+        right: 0;
+        width: 50%;
+        text-align: end;
+        box-sizing: border-box;
+        animation: navBarOut 0.2s linear forwards;
+    }
+
+    @keyframes navBarOut {
+        0% {
+            right: 0;
+        }
+
+        100% {
+            right: -100%;
+        }
+    }
+
+    nav #navMenu li {
+        margin-right: 1em;
+    }
+
+    nav .fa-solid {
+        display: block;
+        margin-right: 1em;
+    }
+
+    nav #navMenu li::after {
+        display: none;
+    }
+}
