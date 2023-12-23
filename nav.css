@@ -68,28 +68,10 @@ nav #navMenu li:hover::after {
         padding: 0.3em 2em;
     }
 
-}
-
-/* Responsive: Mobile L */
-
-@media (max-width: 425px) {
-    nav {
-        padding: 0.3em 0;
-    }
-
-    nav label {
-        font-size: 1em;
-        margin-left: 1em;
-    }
-
     nav #navMenu {
         display: none;
         z-index: 1;
         gap: 0;
-    }
-
-    nav #navMenu li {
-        margin: 1em 0;
     }
 
     nav #navMenu.active {
@@ -137,15 +119,34 @@ nav #navMenu li:hover::after {
     }
 
     nav #navMenu li {
-        margin-right: 1em;
+        margin: 2em 1em 1em 0;
     }
 
     nav .fa-solid {
         display: block;
         margin-right: 1em;
+        font-size: 1.2em;
     }
 
     nav #navMenu li::after {
         display: none;
+    }
+
+}
+
+/* Responsive: Mobile L */
+
+@media (max-width: 425px) {
+    nav {
+        padding: 0.3em 0;
+    }
+
+    nav label {
+        font-size: 1em;
+        margin-left: 1em;
+    }
+
+    nav .fa-solid {
+        font-size: 1em;
     }
 }
