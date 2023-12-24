@@ -13,6 +13,7 @@ navMenuButton.addEventListener("click", () => {
     }
 })
 
+// Scroll Debug
 document.addEventListener("DOMContentLoaded", function() {
     const navHeight = document.querySelector('nav').offsetHeight;
   

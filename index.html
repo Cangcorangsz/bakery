@@ -20,6 +20,7 @@
   <link rel="stylesheet" href="header.css">
   <link rel="stylesheet" href="about.css">
   <link rel="stylesheet" href="menu.css">
+  <link rel="stylesheet" href="contact.css">
 </head>
 
 <body>
@@ -28,8 +29,8 @@
     <ul id="navMenu">
       <li><a href="#about">About</a></li>
       <li><a href="#menu">Menu</a></li>
-      <li><a href="">Cart</a></li>
-      <li><a href="">Account</a></li>
+      <li><a href="#contact">Order/Contact</a></li>
+      <li><a href="javascript:void(0)">Account</a></li>
     </ul>
     <i class="fa-solid fa-bars" id="navMenuButton"></i>
   </nav>
@@ -49,24 +50,18 @@
       </h2>
       <div class="description">
         <p>
-          Selamat datang di Flourish Bakery, tempat di mana setiap irisan mempersembahkan kehidupan pada rasa! Dengan
-          slogan "Bringing Flavor to Life in Every Slice," Flourish Bakery berkomitmen menyajikan pengalaman bakery tak
-          terlupakan. Setiap kue kami adalah karya seni kuliner yang dihasilkan dengan bahan berkualitas tinggi,
-          menciptakan momen berharga dalam hidup Anda. Kami mengundang Anda untuk merayakan hidup dan menikmati kenangan
-          manis bersama kami di Flourish Bakery.
+          Welcome to Flourish Bakery, where every slice brings life to flavor! With the slogan 'Bringing Flavor to Life
+          in Every Slice,' Flourish Bakery is dedicated to delivering an unforgettable bakery experience. Each of our
+          cakes is a culinary work of art crafted with high-quality ingredients, creating precious moments in your life.
+          We invite you to celebrate life and savor sweet memories with us at Flourish Bakery.
         </p>
-        <br>
-        <!-- <p>
-          Kami tidak sekadar menjual kue; kami menciptakan momen berharga dalam hidup Anda. Dari resep teliti hingga
-          pelayanan pelanggan yang tak tertandingi, Flourish Bakery berkomitmen untuk menyajikan yang terbaik dalam
-          setiap produk. Bergabunglah dengan kami dalam merayakan hidup dan menciptakan kenangan manis di Flourish
-          Bakery.
-        </p> -->
       </div>
       <img
         src="https://images.unsplash.com/photo-1622063531136-e7efff4ece72?q=80&w=1571&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         alt="">
     </section>
+
+    <hr>
 
     <section id="menu">
       <img
@@ -76,34 +71,73 @@
       <div class="menu-menu">
         <div class="menus">
           <h3 class="menu-name">Velvet Bliss Cake</h3>
-          <p class="menu-desc">Kue lembut dengan krim keju dan cokelat. - Rp 150.000</p>
+          <p class="menu-desc">Soft cake with cream cheese and chocolate layers. - Rp 150.000</p>
         </div>
         <div class="menus">
           <h3 class="menu-name">Citrus Burst Delight</h3>
-          <p class="menu-desc">Kue beraroma segar dengan lemon dan jeruk. - Rp 120.000</p>
+          <p class="menu-desc">Freshly aromatic cake with lemon and orange layers. - Rp 120.000</p>
         </div>
         <div class="menus">
           <h3 class="menu-name">Midnight Elegance Torte</h3>
-          <p class="menu-desc">Torte cokelat mewah dengan ganache hitam. - Rp 180.000</p>
+          <p class="menu-desc">Luxurious chocolate torte with black ganache. - Rp 180.000</p>
         </div>
         <div class="menus">
           <h3 class="menu-name">Raspberry Dream Swirl</h3>
-          <p class="menu-desc">Kue dengan lapisan raspberry dan cream cheese. - Rp 160.000</p>
+          <p class="menu-desc">Cake with raspberry and cream cheese layers. - Rp 160.000</p>
         </div>
         <div class="menus">
           <h3 class="menu-name">Caramel Crunch Symphony</h3>
-          <p class="menu-desc">Kue caramel dengan lapisan crunch garing. - Rp 140.000</p>
+          <p class="menu-desc">Caramel cake with a crispy crunch layer. - Rp 140.000</p>
         </div>
-        <!-- <div class="menus">
-          <h3 class="menu-name">Lavender Lemonade Infusion</h3>
-          <p class="menu-desc">Kue lembut dengan sentuhan lavender dan lemon. - Rp 130.000</p>
-        </div> -->
       </div>
       <img
         src="https://images.unsplash.com/photo-1566121933407-3c7ccdd26763?q=80&w=1473&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         alt="" class="gambar-dua">
     </section>
+
+    <hr>
+
+    <section id="contact">
+      <h2 class="sub-header">Contact / Order</h2>
+      <p class="contact-desc1">Discover extraordinary catering at Flourish Bakery, where we cater to events of all
+        sizes. We prioritize both
+        visual appeal and delectable taste to meet your highest standards. Don't hesitate to reach out to us.</p>
+      <br>
+      <p class="contact-desc2">Flourish Bakery, Sweet Avenue 123, 56789 Cityville, CA</p>
+      <br>
+      <p class="contact-desc1">For inquiries, call us at 0123-456-7890 or email us at info@flourishbakery.com. <span
+          class="bold">To order please fill form below:</span></p>
+      <form action="">
+        <input type="text" id="fullName" placeholder="Full Name" required>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required
+          placeholder="123-456-7890">
+        <input type="text" id="address" placeholder="Delivery Address" required>
+        <input type="text" id="option"
+          placeholder="Cake Option and Quantity e.g Velvet Bliss Cake/1, Citrus Burst Delight/2" required>
+        <label for="specialInstructions">Special Instructions or Additional Requests:</label>
+        <br>
+        <textarea id="specialInstructions" name="specialInstructions" rows="4" cols="50"
+          placeholder="(Optional)"></textarea>
+        <input type="email" id="email" placeholder="Email" required>
+        <label for="additionalNotes">Additional Notes or Messages:</label>
+        <textarea id="additionalNotes" name="additionalNotes" rows="4" cols="50" placeholder="(Optional)"></textarea>
+
+        <p>You will receive an email from us in less than 24 hours to confirm your order.</p>
+        <input type="submit" value="Submit" id="submitOrder">
+      </form>
+    </section>
   </main>
+
+  <footer>
+    <p>Made by <span>Cangcoransz</span> a.k.a Dimas Rizki</p>
+    <a href="https://www.instagram.com/cangcorangsz?igsh=MTJnMzBwZGU5OWNuaA==" target="_blank"><i
+        class="fa-brands fa-instagram"></i></a>
+    <a href="https://github.com/Cangcorangsz" target="_blank"><i class="fa-brands fa-github"></i></a>
+    <a href="https://x.com/dddimasriz?t=lc4FB0GqlBl9a5u5W4zeNw&s=09" target="_blank"><i
+        class="fa-brands fa-x-twitter"></i></a>
+    <a href="https://www.linkedin.com/in/dimas-bajuri-019453260?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+      target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+  </footer>
 
   <script src="script.js"></script>
   <script src="https://kit.fontawesome.com/e49364ca57.js" crossorigin="anonymous"></script>

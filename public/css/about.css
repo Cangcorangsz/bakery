@@ -1,6 +1,6 @@
 #about {
     width: 80%;
-    margin: 10em auto;
+    margin: 7em auto;
     display: grid;
     grid-template-areas: 
     "imgAbout sub-header1"
@@ -33,7 +33,7 @@
     /* text-indent: 1em; */
     letter-spacing: 0.2em;
     justify-self: center;
-    text-align: center;
+    text-align: left;
     font-size: 100%;
 }
 
