@@ -3,6 +3,7 @@
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -19,6 +20,10 @@ nav {
     position: fixed;
     z-index: 2;
     background-color: #F99417;
+}
+
+section {
+    scroll-margin: 50%;
 }
 
 nav label {
@@ -40,6 +45,10 @@ nav #navMenu {
 
 nav #navMenu li {
     cursor: pointer;
+}
+
+nav #navMenu li a {
+    text-decoration: none;
     color: #F5F5F5;
 }
 

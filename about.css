@@ -1,13 +1,13 @@
 #about {
     width: 80%;
-    margin: auto;
+    margin: 10em auto;
     display: grid;
     grid-template-areas: 
     "imgAbout sub-header1"
     "imgAbout desc";
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto 1fr;
-    margin-top: 10em;
+    column-gap: 20px;
 }
 
 #about img {
@@ -15,33 +15,36 @@
     align-self: center;
     justify-self: center;
     aspect-ratio: 9 / 16;
-    width: 60%;
+    width: 80%;
     border-radius: 10px;
 }
 
 #about .sub-header {
     grid-area: sub-header1;
+    text-align: center;
     align-self: center;
     font-size: 400%;
-    margin: 1em 0;
+    margin: 20px 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 #about .description {
     grid-area: desc;   
-    text-indent: 1.5em;
+    /* text-indent: 1em; */
     letter-spacing: 0.2em;
     justify-self: center;
+    text-align: center;
     font-size: 100%;
 }
 
 @media (max-width: 1024px) {
     #about .sub-header {
-        margin: 0.5em 0;
+        margin: 10px 0;
         font-size: 3em;
     }
 
     #about img {
-        width: 70%;
+        width: 100%;
     }
 }
 
@@ -67,7 +70,7 @@
         "sub-header1"
         "desc";
         grid-template-columns: 1fr;
-        margin-top: 3em;
+        margin: 3em auto;
     }
 
     #about .sub-header {
