@@ -111,6 +111,11 @@ footer i {
     margin: 1em 0.5em;
 }
 
+footer .i-container {
+    width: fit-content;
+    height: fit-content;
+}
+
 @media (max-width: 425px) {    
     footer p {
         font-size: 100%;

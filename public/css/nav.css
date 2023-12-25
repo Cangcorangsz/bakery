@@ -58,7 +58,7 @@ nav #navMenu li a {
     color: #F5F5F5;
 }
 
-nav .fa-solid {
+nav .fa-solid, nav span {
     display: none;
 }
 
@@ -94,32 +94,34 @@ nav #navMenu li:hover::after {
         display: flex;
         flex-direction: column;
         right: -100%;
-        top: 37.59px;
+        top: 65.59px;
         width: 50%;
         text-align: end;
         box-sizing: border-box;
+        border-radius: 0 0 0 10px;
         animation: navBarIn 0.2s linear forwards;
     }
-
+    
     @keyframes navBarIn {
         0% {
             right: -100%;
         }
-
+        
         100% {
             right: 0;
         }
     }
-
+    
     nav #navMenu:not(.active) {
         position: fixed;
         display: flex;
         flex-direction: column;
-        top: 37.59px;
+        top: 65.59px;
         right: 0;
         width: 50%;
         text-align: end;
         box-sizing: border-box;
+        border-radius: 0 0 0 10px;
         animation: navBarOut 0.2s linear forwards;
     }
 
@@ -137,11 +139,18 @@ nav #navMenu li:hover::after {
         margin: 2em 1em 1em 0;
     }
 
-    nav .fa-solid {
+    nav .fa-solid{
         display: block;
         margin-right: 1em;
         font-size: 1.2em;
     }
+    
+    nav span {
+        height: fit-content;
+        width: fit-content;
+        display: block;
+    }
+
 
     nav #navMenu li::after {
         display: none;
