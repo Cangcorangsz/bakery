@@ -15,3 +15,29 @@ hr {
     color: #797979;
     margin: auto;
 }
+
+a {
+    -webkit-tap-highlight-color: transparent;
+    /* Untuk perangkat berbasis WebKit seperti Chrome dan Safari */
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    /* Versi yang lebih luas untuk memastikan kompatibilitas */
+    -moz-tap-highlight-color: transparent;
+    /* Untuk Firefox */
+    -ms-tap-highlight-color: transparent;
+    /* Untuk Internet Explorer/Edge */
+    tap-highlight-color: transparent;
+    /* Standar CSS yang diusulkan */
+}
+
+li {
+    -webkit-tap-highlight-color: transparent;
+    /* Untuk perangkat berbasis WebKit seperti Chrome dan Safari */
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    /* Versi yang lebih luas untuk memastikan kompatibilitas */
+    -moz-tap-highlight-color: transparent;
+    /* Untuk Firefox */
+    -ms-tap-highlight-color: transparent;
+    /* Untuk Internet Explorer/Edge */
+    tap-highlight-color: transparent;
+    /* Standar CSS yang diusulkan */
+}

@@ -124,7 +124,8 @@ nav #navMenu li:hover::after {
     nav .fa-solid{
         display: block;
         margin-right: 1em;
-        font-size: 1.2em;
+        font-size: 1.4em;
+        overflow: hidden;
     }
     
     nav #navMenu li::after {
